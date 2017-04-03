@@ -1,0 +1,97 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #5919DE;
+}
+
+.container-fluid, .ui-view-fix {
+  height: 100%;
+  width: 100%;
+}
+
+.game-side {
+  height: 35% !important;
+  padding-top:5em;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.result {
+  height: 25% !important;
+  color: white;
+}
+
+.refresh {
+  height: 5% !important;
+}
+
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.fix-result-row {
+  padding-top: 4em;
+}
+
+game-box {
+  height:100%
+}
+
+comp-box {
+  height: 100%;
+}
+
+result-section {
+  height: 25%;
+  color: white;
+}
+
+.fix-button {
+  border: none;
+  background-color: none;
+  color: white;
+}
+
+.fix-icon {
+  font-size: 7em;
+}
+
+.user-side {
+  background-color: #00A129;
+}
+
+.computer-side {
+  background-color: #9A09B5;
+}
+
+.user-result {
+  padding-top: 1em;
+  padding-left: 1em;
+  background-color: #00A129;
+  border-top-right-radius: 1em;
+}
+
+.computer-result {
+  padding-top: 1em;
+  background-color: #9A09B5;
+  border-bottom-left-radius: 1em;
+}
+
+@media (max-width: 768px) {
+  .fix-result-row {
+    padding-top: 1em;
+  }
+
+  .fix-icon {
+    font-size: 5em;
+  }
+}
+
+.no-decoration, .no-decoration:hover, .no-decoration:focus, .no-decoration:active {
+  text-decoration: none;
+  border: none;
+}
