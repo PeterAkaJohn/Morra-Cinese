@@ -6,9 +6,10 @@
 
 * clone repository
 
-* ```
-cd into folder
-npm install
-bower install
-gulp serve
-```
+* open terminal and run :
+  ```
+  cd into folder
+  npm install
+  bower install
+  gulp serve
+  ```
