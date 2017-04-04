@@ -8,11 +8,11 @@ module.exports = function(config) {
       './bower_components/angular/angular.min.js',
       './bower_components/angular-ui-router/release/angular-ui-router.min.js',
       './bower_components/angular-mocks/angular-mocks.js',
-      'app/scripts/services/game.spec.js',
       'app/scripts/app.js',
       'app/scripts/controllers/*.js',
       'app/scripts/services/*.js',
-      'app/scripts/directives/*.js'
+      'app/scripts/directives/*.js',
+      'app/scripts/core/*.js'
     ],
     exclude: [
     ],

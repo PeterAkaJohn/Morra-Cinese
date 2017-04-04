@@ -3,7 +3,7 @@
 angular.module('app.user.directive', [])
 .directive('gameBox', function() {
   return {
-    templateUrl: '../views/game-box.html',
-    controller: 'UserController'
+    restrict: 'EA',
+    templateUrl: '../views/game-box.html'
   };
 });

@@ -1,11 +1,9 @@
 <div class="row full-height">
-  <div class="col-xs-4 text-center full-height">
-    <a class="btn fix-button" type="button" name="button" ng-click="setUserMove(0)"><i class="fa fa-hand-rock-o fix-icon"></i></a>
-  </div>
-  <div class="col-xs-4 text-center full-height">
-    <a class="btn fix-button" type="button" name="button" ng-click="setUserMove(1)"><i class="fa fa-hand-scissors-o fix-icon" aria-hidden="true"></i></a>
-  </div>
-  <div class="col-xs-4 text-center full-height">
-    <a class="btn fix-button" type="button" name="button" ng-click="setUserMove(2)"><i class="fa fa-hand-paper-o fix-icon" aria-hidden="true"></i></a>
+  <div class="col-xs-4 text-center full-height" ng-repeat="move in MOVES">
+    <a class="btn fix-button no-decoration" ng-class="{ 'btn fix-button no-decoration active-move': userMove == move && showUser, 'btn fix-button no-decoration': userMove != move }" type="button" name="button">
+      <i class="fa fa-hand-rock-o fix-icon" ng-if="move=='ROCK'" ng-click="start(MOVES.indexOf(move))"></i>
+      <i class="fa fa-hand-scissors-o fix-icon" ng-if="move=='SCISSORS'" ng-click="start(MOVES.indexOf(move))" aria-hidden="true"></i>
+      <i class="fa fa-hand-paper-o fix-icon" ng-if="move=='PAPER'" ng-click="start(MOVES.indexOf(move))" aria-hidden="true"></i>
+    </a>
   </div>
 </div>

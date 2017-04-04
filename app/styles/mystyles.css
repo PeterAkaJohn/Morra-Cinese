@@ -14,6 +14,10 @@ body, html {
   padding-top:5em;
 }
 
+.white-text {
+  color: white;
+}
+
 .full-height {
   height: 100%;
 }
@@ -37,6 +41,10 @@ body, html {
   padding-top: 4em;
 }
 
+.fix-user-points {
+  padding-top: 3em;
+}
+
 game-box {
   height:100%
 }
@@ -56,8 +64,28 @@ result-section {
   color: white;
 }
 
+.fix-button:hover {
+  color: white;
+}
+
+.fix-button:visited {
+  color: white;
+}
+
+.fix-button:focus {
+  color: white;
+}
 .fix-icon {
   font-size: 7em;
+}
+
+.active-move {
+  background-color: white;
+  color: black ;
+}
+
+.active-move:hover {
+  color: black ;
 }
 
 .user-side {
@@ -81,17 +109,21 @@ result-section {
   border-bottom-left-radius: 1em;
 }
 
+.no-decoration, .no-decoration:hover, .no-decoration:focus, .no-decoration:active {
+  text-decoration: none;
+  border: none;
+}
+
 @media (max-width: 768px) {
   .fix-result-row {
     padding-top: 1em;
   }
 
   .fix-icon {
-    font-size: 5em;
+    font-size: 3em;
   }
-}
 
-.no-decoration, .no-decoration:hover, .no-decoration:focus, .no-decoration:active {
-  text-decoration: none;
-  border: none;
+  .fix-user-points {
+    padding-top: 0;
+  }
 }

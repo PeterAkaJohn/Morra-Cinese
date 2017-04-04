@@ -1,12 +1,6 @@
 'use strict';
 
-angular.module('app.gameservice', [])
-    .constant('MOVES', ['ROCK', 'SCISSORS', 'PAPER'])
-    .constant("OUTCOME", {
-        WIN: "WIN",
-        LOSS: "LOSS",
-        TIE: "TIE"
-    })
+angular.module('app.gameservice', ['app.constant'])
     .service('gameService', ['MOVES', 'OUTCOME', function(MOVES, OUTCOME) {
 
         this.startRound = function(userInput) {

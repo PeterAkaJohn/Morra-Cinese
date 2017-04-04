@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app', ['ui.router', 'app.game', 'app.user', 'app.gameservice', 'app.user.directive', 'app.computer.directive', 'app.result.directive'])
+angular.module('app', ['ui.router', 'app.game', 'app.constant', 'app.gameservice', 'app.user.directive', 'app.computer.directive', 'app.result.directive'])
 .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
 

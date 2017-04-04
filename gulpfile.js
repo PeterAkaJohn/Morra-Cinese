@@ -90,3 +90,7 @@ gulp.task('clean', function() {
 gulp.task('default', ['clean'], function() {
   gulp.start('usemin', 'imagemin', 'copyfonts');
 });
+
+gulp.task('serve', function(){
+   gulp.start('browser-sync');
+ })
