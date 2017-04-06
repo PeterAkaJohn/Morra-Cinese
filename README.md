@@ -14,4 +14,4 @@
   gulp serve
   ```
 
-* to run test need to run `npm install -g karma-cli` and then `karma start` or `gulp test`
+* to run tests, need to have karma-cli globally installed with `npm install -g karma-cli` and then in the terminal run `karma start` or `gulp test`
