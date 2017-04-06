@@ -13,3 +13,5 @@
   bower install
   gulp serve
   ```
+
+* to run test need to run `npm install -g karma-cli` and then `karma start` or `gulp test`

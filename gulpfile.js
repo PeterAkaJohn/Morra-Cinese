@@ -13,7 +13,8 @@ var gulp = require('gulp'),
   rev = require('gulp-rev'),
   browserSync = require('browser-sync'),
   ngannotate = require('gulp-ng-annotate'),
-  del = require('del');
+  del = require('del'),
+  Server = require('karma').Server;
 
 
 gulp.task('jshint', function() {
@@ -84,6 +85,13 @@ gulp.task('browser-sync', ['default'], function() {
 // Clean
 gulp.task('clean', function() {
   return del(['dist']);
+});
+
+gulp.task('test', function (done) {
+  new Server({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
 });
 
 // Default task
